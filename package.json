@@ -1,0 +1,19 @@
+{
+  "name": "api-pack-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Claudinei Machado",
+    "email": "cjchamado@gmail.com",
+    "url": "https://github.com/cjchamado"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cjchamado/api-pack-express.git"
+  }
+}
