@@ -1,7 +1,7 @@
 {
   "name": "api-pack-express",
   "version": "1.0.0",
-  "description": "",
+  "description": "ExpressJS middlewares stack for nodejs-api-pack",
   "main": "index.js",
   "license": "MIT",
   "author": {
