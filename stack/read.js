@@ -4,10 +4,9 @@
  * @param {*} next
  */
 module.exports = async (req, res, next) => {
-  /**
-   * @todo Add skip process option here
-   * suggest: req.ApiPack.receive = false
-   */
+  req.ApiPack.operation.identifiers = req.params;
+  req.ApiPack.operation.context.filters = req.query;
+  req.ApiPack.operation.context.query = req.query;
 
   await req.ApiPack.read();
 
