@@ -1,5 +1,3 @@
-## Sorry
+# Install + Usage + Examples
 
-This feature is being documented, but can already be used.
-
-[Click Here](https://github.com/kolinalabs/nodejs-api-pack-samples) and view the examples and use.
+Read the documenation **[here](https://kolinalabs.github.io/nodejs-api-pack-docs/)**
