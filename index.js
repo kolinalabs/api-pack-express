@@ -10,6 +10,7 @@ module.exports = (apiPack, operations) => {
         operation.context = {
           request: req,
           errors: {
+            routeChecker: [],
             checker: [],
             validator: []
           }
