@@ -1,4 +1,10 @@
 module.exports = async (req, res, next) => {
-  await req.ApiPack.serialize();
-  next();
+  try {
+    await req.ApiPack.serialize();
+    next();
+  } catch(e) {
+    return res.status(500).send({
+        message: e.toString()
+    });
+  }
 };
