@@ -1,6 +1,6 @@
 {
   "name": "@kolinalabs/api-pack-express",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ExpressJS middlewares stack for nodejs-api-pack",
   "main": "index.js",
   "license": "MIT",
