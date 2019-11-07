@@ -6,7 +6,7 @@ module.exports = (apiPack, operations) => {
     const method = operation.method.toLowerCase();
     router[method](
       operation.path,
-      (req, res, next) => {
+      async (req, res, next) => {
         operation.context = {
           request: req,
           errors: {
@@ -15,9 +15,8 @@ module.exports = (apiPack, operations) => {
             validator: []
           }
         };
-        apiPack.operation = operation;
-        req.ApiPack = apiPack;
-        next();
+        req.ApiPack = apiPack.strictify(operation);
+        await next();
       },
       Stack
     );
